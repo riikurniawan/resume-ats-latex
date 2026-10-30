@@ -1,0 +1,157 @@
+\documentclass[a4paper,11pt]{article}
+
+% ===== PACKAGES =====
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+
+% ===== FORMATTING =====
+\pagestyle{empty}                    % Hapus nomor halaman
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Format judul section (garis bawah tebal)
+\titleformat{\section}
+  {\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% ===== CUSTOM COMMANDS =====
+% \entry{Judul}{Tanggal}{Tempat}{Deskripsi opsional}
+\newcommand{\entry}[4]{
+  \textbf{#1} \hfill \textit{#2} \\
+  \textit{#3}
+  \ifx&#4&\else
+    \\ #4
+  \fi
+  \vspace{4pt}
+}
+
+% ===== DOKUMEN MULAI =====
+\begin{document}
+
+% ===== HEADER =====
+\begin{center}
+  {\LARGE\bfseries ARI KURNIAWAN} \\[4pt]
+  \href{mailto:arikurnia2601@gmail.com}{arikurnia2601@gmail.com} \\
+  Portfolio: \href{https://riikurniawan.github.io}{riikurniawan.github.io} \quad
+  LinkedIn: \href{https://linkedin.com/in/ariikurniawan}{ariikurniawan} \quad
+  GitHub: \href{https://github.com/riikurniawan}{riikurniawan}
+\end{center}
+
+\vspace{6pt}
+
+% ===== EDUCATION =====
+\section{Education}
+
+\entry
+  {Batam State Polytechnic}
+  {August 2022 --  Nov 2025}
+  {Diploma III Informatics Engineering}
+  {}
+
+% ===== SKILLS =====
+\section{Skills}
+
+\begin{itemize}[leftmargin=*, nosep]
+  \item \textbf{Programming Languages:} PHP, Javascript, Java, Python,
+  \item \textbf{Tools:} Git, VSCode, Podman, Bash
+  \item \textbf{Operating System:} Linux, Windows
+\end{itemize}
+
+% ===== EXPERIENCE =====
+\section{Experience}
+
+\textbf{IT Programmer} \hfill \textit{July 2026 -- Now} \\
+\textit{SEATRIUM (PT. SMOE Indonesia) --- Batam, Indonesia}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Developing in-house applications to meet project requirements.
+  \item Debugging applications and addressing feedback from end users.
+  \item Conducting research and implementing new technologies.
+  \item Managing application development and version control using Git repositories.
+  \item Ensuring compliance with workplace safety rules in company areas.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{IT Technician} \hfill \textit{June 2025 -- July 2026} \\
+\textit{SEATRIUM (PT. SMOE Indonesia) --- Batam, Indonesia}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Developing in-house applications to meet project requirements.
+  \item Debugging applications and addressing feedback from end users.
+  \item Conducting research and implementing new technologies.
+  \item Managing application development and version control using Git repositories.
+  \item Ensuring compliance with workplace safety rules in company areas.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Web Developer (Internship)} \hfill \textit{July 2024 -- March 2025} \\
+\textit{SEATRIUM (PT. SMOE Indonesia) --- Batam, Indonesia}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Developing in-house applications to meet project requirements.
+  \item Debugging applications and addressing feedback from end users.
+  \item Conducting research and implementing new technologies.
+  \item Managing application development and version control using Git repositories.
+  \item Ensuring compliance with workplace safety rules in company areas.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Independent Study --- IBM Academy: Hybrid Cloud \& Red Hat} \hfill \textit{February 2024 -- June 2024} \\
+\textit{Kampus Merdeka (Infinite Learning) --- Hybrid (Online \& OnSite, Batam)}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Studied basic (RH124) and advanced (RH134) system administration, and prepared for RHCSA certification.
+  \item Participated in hybrid synchronous \& asynchronous learning with 3--4 hour daily sessions.
+  \item Learned about cloud computing, service models (IaaS, PaaS, SaaS), and digital transformation strategies.
+  \item Completed a 4-week Capstone Project with RHCSA-certified mentors on real-world case studies.
+  \item Developed communication, collaboration, and adaptability skills through agile and problem-based learning.
+\end{itemize}
+
+% ===== SIDE PROJECTS =====
+\section{Side Projects}
+
+\textbf{Supplier Oli Official --- Company Profile} \hfill
+\href{https://supplieroliofficial.com}{supplieroliofficial.com}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Analyzed client requirements and designed website layout based on client branding.
+  \item Created landing page, about us, product, and blog pages.
+  \item Ensured responsive web pages across various devices.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Shineskin Beauty Clinic --- Patient Management System} \hfill
+\href{https://ariikurniawan-dev.ai.id?project=ShineSkin_Beauty_Clinic_Patient_Management_System}{shineskinbeautyclinic.com}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Designed and developed user interface for patient management application.
+  \item Integrated the application with APIs for patient data management.
+  \item Performed debugging and testing to ensure stable functionality.
+\end{itemize}
+
+\vspace{4pt}
+
+\textbf{Shineskin Beauty Clinic --- Company Profile} \hfill
+\href{https://shineskinbeautyclinic.com}{shineskinbeautyclinic.com}
+\begin{itemize}[leftmargin=*, nosep, topsep=2pt]
+  \item Configured and customized WordPress theme templates based on client requirements.
+  \item Designed banners for the landing page; ensured responsive design across devices.
+\end{itemize}
+
+% ===== CERTIFICATIONS =====
+\section{Certifications}
+
+\begin{itemize}[leftmargin=*, nosep]
+  \item \textbf{Red Hat Certified System Administrator (RHCSA)} --- Red Hat, \textit{Issued: June 2024} \\
+  \href{https://rhtapps.redhat.com/verify?certId=240-096-156}{View Certificate}
+  
+  \item \textbf{Certification BNSP --- Junior Mobile Programmer} --- LSP Teknologi Digital, \textit{Issued: October 2022} \\
+  \href{https://riikurniawan.github.io?cert=Junior_Mobile_Programmer}{View Certificate}
+\end{itemize}
+
+\end{document}
+
+
